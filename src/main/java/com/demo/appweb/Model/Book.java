@@ -21,6 +21,10 @@ public class Book {
     @Column(name = "updateAt")
     private Date updateAt;
 
+    @ManyToOne
+    @JoinColumn(name = "id_author")
+    private Author author;
+
     public Book() {
     }
 
